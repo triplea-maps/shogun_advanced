@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-	<info name="Shogun Advanced" version="2.2"/>
+	<info name="Shogun Advanced" version="2.3"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
 	<triplea minimumVersion="2.6.14517"/>
 	<diceSides value="7"/>
@@ -15,9 +15,8 @@ when a pass gets blocked a unit should not be able to move out...!
 Support for sea units from land units   :   Ships with missile units onboard +1 battle ( impossible yet)
 1,25 % issue
 
-LAST CHALLENGES:
+TOOLTIP INFO MAX 10 PEASANT and YARI + info
 test ZA 2 and 3 placement
-Teitoku-Atakebune no placement allowed in shodo bay?
 kami-ambush solution notification
 tsunami sound? AA
 improve Date sign
@@ -5983,7 +5982,7 @@ support  def structures versus jishin battle
         <option name="isCombatTransport" value="true"/>
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
-        <option name="requiresUnits" value="Tsu_(Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
+        <option name="requiresUnits" value="Tsu_(Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big_Harbour)"/>
         <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
         <!--<option name="maxBuiltPerPlayer" value="20"/>-->
         <option name="tuv" value="1"/>
@@ -5998,7 +5997,6 @@ support  def structures versus jishin battle
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
         <option name="requiresUnits" value="Tsu_(Harbour)_"/><option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)_"/><option name="requiresUnits" value="Tsu_(Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
-        <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
         <option name="tuv" value="1"/>
     </attachment>
 
@@ -6011,9 +6009,7 @@ support  def structures versus jishin battle
         <option name="isCombatTransport" value="true"/>
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
-        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
-        <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
-        <!--<option name="maxBuiltPerPlayer" value="5"/> -->
+        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big_Harbour)"/>
     </attachment>
 
 <!-- Atakebune -->
@@ -6027,9 +6023,7 @@ support  def structures versus jishin battle
         <option name="isCombatTransport" value="true"/>
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
-        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
-        <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
-       <!-- <option name="maxBuiltPerPlayer" value="5"/>-->
+        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big_Harbour)"/>
     </attachment>
     
     <!-- Teitoku-Atakebune -->
@@ -6043,7 +6037,7 @@ support  def structures versus jishin battle
         <option name="isCombatTransport" value="true"/>
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
-        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
+        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big_Harbour)"/>
        <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
         <option name="maxBuiltPerPlayer" value="2"/>
     </attachment>
@@ -6067,7 +6061,7 @@ support  def structures versus jishin battle
         <option name="isCombatTransport" value="true"/>
         <option name="blockade" value="1"/>
         <option name="createsResourcesList" value="-1:PUs"/>
-        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/>
+        <option name="requiresUnits" value="Shuyo-Tsu_(Big-Harbour)"/><option name="requiresUnits" value="Shuyo-Tsu_(Big_Harbour)"/>
         <!--<option name="unitPlacementRestrictions" value="OpenSea"/>-->
         <option name="maxBuiltPerPlayer" value="2"/>
     </attachment>
@@ -7001,7 +6995,7 @@ support  def structures versus jishin battle
 <!-- ======================================= GO isAI =======================================  -->
 
 	<attachment foreach="$AllRegularClans$" name="conditionAttachment_isAI_@AllRegularClans@" attachTo="@AllRegularClans@" javaClass="RulesAttachment" type="player">
-		   <option name="isAI" value="true"/>
+      <option name="isAI" value="true"/>
 	</attachment>
 	
   <attachment foreach="$AllPlayers-Joseon$" name="conditionAttachment_isAI_@AllPlayers-Joseon@" attachTo="@AllPlayers-Joseon@" javaClass="RulesAttachment" type="player">
@@ -7182,8 +7176,9 @@ support  def structures versus jishin battle
 <!--   1st turn regular-->
 	<attachment name="triggerAttachmentMinor" attachTo="Minor" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachmentAlwaysTrue"/>
-		<option name="purchase" value="Za_(Guild)_2pu" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="2"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="8"/>
+		<option name="purchase" value="Ichiba_(Mart)" count="3"/>
+		<option name="purchase" value="Za_(Guild)_1pu" count="1"/>
 		<option name="placement" value="Kyoto:Kanrei" count="1"/>
 		<option name="players" value="Minor"/>
 		<option name="when" value="before:minorPurchase"/>
@@ -7249,7 +7244,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
 		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
-    <option name="purchase" value="Ichiba_(Mart)" count="1"/>
+    
 		<option name="players" value="Otomo"/>
 		<option name="when" value="before:OtomoPurchase"/>
 		<option name="uses" value="1"/>
@@ -7282,7 +7277,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Shimazu"/>
 		<option name="when" value="before:ShimazuPurchase"/>
 		<option name="uses" value="1"/>
@@ -7317,7 +7312,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ronin" count="3"/>
 		<option name="purchase" value="Ninja" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Miyoshi"/>
 		<option name="when" value="before:MiyoshiPurchase"/>
 		<option name="uses" value="1"/>
@@ -7387,7 +7382,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Bajutsu" count="1"/>
 		<option name="purchase" value="Samurai" count="2"/>
 		<option name="purchase" value="Daikyu-Samurai" count="2"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Amago"/>
 		<option name="when" value="before:AmagoPurchase"/>
 		<option name="uses" value="1"/>
@@ -7418,7 +7413,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="2"/>
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Azai"/>
 		<option name="when" value="before:AzaiPurchase"/>
 		<option name="uses" value="1"/>
@@ -7452,7 +7447,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
-    <option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+    <option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Bessho"/>
 		<option name="when" value="before:BesshoPurchase"/>
 		<option name="uses" value="1"/>
@@ -7487,7 +7482,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
-    <option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+    <option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Hatakeyama"/>
 		<option name="when" value="before:HatakeyamaPurchase"/>
 		<option name="uses" value="1"/>
@@ -7522,7 +7517,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sohei" count="1"/>
 		<option name="purchase" value="Yumi-Sohei" count="3"/>
 		<option name="purchase" value="Niganata-Bajutsu" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="purchase" value="Ji_(Temple)" count="2"/>
     <option name="purchase" value="Hongan-Ji_(Main-Temple)" count="1"/>
 		<option name="players" value="Ikko-Ikki"/>
@@ -7557,7 +7552,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ninja" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Oda"/>
 		<option name="when" value="before:OdaPurchase"/>
 		<option name="uses" value="1"/>
@@ -7591,7 +7586,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Samurai" count="2"/>
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Yumi-Ashigaru" count="4"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Uesugi"/>
 		<option name="when" value="before:UesugiPurchase"/>
 		<option name="uses" value="1"/>
@@ -7626,7 +7621,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Daikyu-Samurai" count="1"/>
 		<option name="purchase" value="Samurai" count="2"/>
 		<option name="purchase" value="Sodaisho" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Takeda"/>
 		<option name="when" value="before:TakedaPurchase"/>
 		<option name="uses" value="1"/>
@@ -7658,7 +7653,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Samurai" count="1"/>
 		<option name="purchase" value="Ninja" count="2"/>
-    <option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+    <option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Hojo"/>
 		<option name="when" value="before:HojoPurchase"/>
 		<option name="uses" value="1"/>
@@ -7692,7 +7687,7 @@ support  def structures versus jishin battle
 		<option name="purchase" value="Sodaisho" count="1"/>
 		<option name="purchase" value="Samurai" count="2"/>
 		<option name="purchase" value="Ninja" count="1"/>
-		<option name="purchase" value="Tsu_(Harbour)" count="1"/><option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="purchase" value="Tsu_(Harbour)" count="1"/>
 		<option name="players" value="Date"/>
     <option name="when" value="before:DatePurchase"/>
     <option name="uses" value="1"/>
@@ -7728,6 +7723,28 @@ support  def structures versus jishin battle
 		<option name="when" value="before:JoseonPurchase"/>
 		<option name="uses" value="1"/>
 	</attachment>	
+	
+	<!-- HIER-->
+	
+	<!-- seperate purchase Mart at initial placement as can be impossible to be placed if not owning landlocked country which is annooying when player is human and Harbour boost at start-->
+	<attachment foreach="$AllRegularClans$" name="triggerAttachment_Add_Mart" attachTo="@AllRegularClans@" javaClass="TriggerAttachment" type="player">
+      <option name="conditions" value="conditionAttachment_isAI_@AllRegularClans@"/>
+      <option name="purchase" value="Tsu_(Harbour)" count="1"/>
+      <option name="purchase" value="Ichiba_(Mart)" count="1"/>
+      <option name="players" value="@AllRegularClans@"/>
+      <option name="when" value="before:@AllRegularClans@Purchase"/>
+      <option name="uses" value="1"/>
+	</attachment>
+	
+	<!-- same for Ikko-Ikki-->
+  <attachment name="triggerAttachmentIkko-Ikki1_add_Mart" attachTo="Ikko-Ikki" javaClass="TriggerAttachment" type="player">
+    <option name="conditions" value="conditionAttachment_isAI_Ikko-Ikki"/>
+	  <option name="purchase" value="Tsu_(Harbour)" count="1"/>
+    <option name="purchase" value="Ichiba_(Mart)" count="1"/>
+		<option name="players" value="Ikko-Ikki"/>
+		<option name="when" value="before:Ikko-IkkiPurchase"/>
+		<option name="uses" value="1"/>
+</attachment>
 	
 	      
 	     <!-- ====================== GO GO AUTO DAIMYO SUCCESSION ===============
@@ -11413,7 +11430,23 @@ start screen fails showing starting from Miyoshi and then all following clans mi
     <option name="movementLimit"  value="allied:Daimyo_" count="1"/>
 		<option name="attackingLimit" value="allied:Daimyo_" count="1"/>
 		<option name="placementLimit" value="allied:Daimyo_" count="1"/>
+	
+			<!-- NO more than 10 Yari-Ashigaru, :Changbyeong or Peasant in same terriory  , could happen by ALLIED or Minor Daimyo Placement -->	
+    <option name="movementLimit"  value="owned:Yari-Ashigaru" count="10"/>
+		<option name="attackingLimit" value="owned:Yari-Ashigaru" count="10"/>
+		<option name="placementLimit" value="owned:Yari-Ashigaru" count="10"/>
+		
+    <option name="movementLimit"  value="owned:Changbyeong" count="10"/>
+		<option name="attackingLimit" value="owned:Changbyeong" count="10"/>
+		<option name="placementLimit" value="owned:Changbyeong" count="10"/>
+		
+    <option name="movementLimit"  value="owned:Peasant" count="10"/>
+		<option name="attackingLimit" value="owned:Peasant" count="10"/>
+		<option name="placementLimit" value="owned:Peasant" count="10"/>
+				
   </attachment>    
+  
+
 
  </attachmentList>
 
@@ -12026,7 +12059,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 <unitPlacement unitType="Mon_" territory="Sakai" quantity="1" owner="Minor"/><!--  independed -->
 <unitPlacement unitType="Shiro_(Castle)" territory="Sakai" 			quantity="1" owner="Minor"/>
 <unitPlacement unitType="Shuyo-Tsu_(Big_Harbour)_" territory="Sakai" 			quantity="1" owner="Minor"/>
-<unitPlacement unitType="Za_(Guild)_1pu" territory="Sakai" 			quantity="1" owner="Minor"/>
+<unitPlacement unitType="Za_(Guild)_2pu" territory="Sakai" 			quantity="1" owner="Minor"/>
 <unitPlacement unitType="Yisamurai_" territory="Sakai" 	quantity="2" owner="Minor"/>
 <unitPlacement unitType="Yari-Ashigaru_" territory="Sakai" 	quantity="2" owner="Minor"/>
 <unitPlacement unitType="Yumi-Ashigaru_" territory="Sakai" 	quantity="3" owner="Minor"/>
