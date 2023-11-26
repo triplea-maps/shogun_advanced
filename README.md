@@ -12,13 +12,18 @@ It is 1561, towards the end of Sengoku(Warring States) period, 1467 (Beginning o
 * Huge historical map 11264x6290px=71Mpx, one of the biggest TripleA maps.  Unit size 54px high, this is with 4K screens in mind.
 * Nearly 260 land & sea locations, with terrain effects, Mountain Passes, Urban Areas, impassable mountains & rocky shores, Open Sea, Coastal Sea
 * Natural disaster events must be over come like Blocked mountain passes, Earthquakes, Tsunamis and storms
-.
+o
 * 16 factions, 13 Samurai Clans, Ikko-Ikki (revolting peasants) Wako Pirates, Josean (Korea)
 * Sea Zones are worth 1pu(Open Sea) & 2pu(Coastal) per turn
 * All land territories bordering Sea Zones can be blockaded.  There are no convoy centres/route/zones.
-.
+o
 * Fixed, historical Clan territories with three random territories, so each game is different, this simulates the minor clans changing allegiances
 * Monopolies, 11 historical commodities highly sort after in the Sengoku period
 * Diplomacy you will need friends and foes to ascend the ladder to be Shogun
 * Peasants will revolt
 * Kami(Shinto Spirits of the world) will either aid or hinder your quest
+
+| :information_source: For the latest download and discussion, click or copy and paste the link below |
+| --- |
+| [**https://forums.triplea-game.org/topic/3666/shogun-advanced-official-thread**]https://forums.triplea-game.org/topic/3666/shogun-advanced-official-thread | 
+
