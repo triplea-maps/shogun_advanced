@@ -2,7 +2,7 @@
 by Ebbe (graphics/sound/code/testing) & TheDog (code/testing)
 
 **Introduction**
-It is 1561, towards the end of Sengoku(Warring States) period, 1467 (Beginning of the Onin War) to 1615 (Siege of Osaka) that we find ourselves.
+It is 1561, towards the end of Sengoku (Warring States) period, 1467 (Beginning of the Onin War) to 1615 (Siege of Osaka) that we find ourselves.
     Can your Clan climb to the top and become The Shogun?
 
 ![Overview image](/Preview.png)

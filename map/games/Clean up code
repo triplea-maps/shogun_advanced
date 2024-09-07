@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+		<!--  ======================================= SOLVED    GO Clean Sea from double MON  =======================================
+		
+				<attachment  foreach="$AllSea$" name="conditionAttachment_CleanSea@AllSea@" attachTo="Minor" javaClass="RulesAttachment" type="player">
+        <option name="directOwnershipTerritories" value="@AllSea@"/>
+        <option name="unitPresence" value="Mon" count="1"/>
+        <option name="rounds" value="1:2"/>
+    </attachment>
+		
+			<attachment  foreach="$AllSea$" name="triggerAttachment_CleanSea@AllSea@" attachTo="Minor" javaClass="TriggerAttachment" type="player">
+        <option name="conditions" value="conditionAttachment_CleanSea@AllSea@"/>
+        <option name="removeUnits" value="all:Mon" count="1"/>
+        <option name="when" value="before:MinorPurchase"/>
+        <option name="uses" value="1"/>
+    </attachment>	
