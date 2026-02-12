@@ -1,15 +1,22 @@
 ﻿<?xml version="1.0"?>
 <!DOCTYPE game SYSTEM "game.dtd">
 <game>
-	<info name="Shogun Advanced" version="2.5"/>
+	<info name="Shogun Advanced" version="2.6"/>
 	<loader javaClass="games.strategy.triplea.TripleA"/>
 	<triplea minimumVersion="2.6.14517"/>
 	<diceSides value="7"/>
 	
-<!--Created by Created by Ebbe and The Dog / 2021-2022-2023-->
+<!-- Created by Ebbe and TheDog 2021 to 2023 -->
 
 <!--ADD WISHLIST:  LAND UNIT SUPPORT OF SEA UNITS
 
+This post updated 4th Feb 2026
+v2.6 2026/02
+* Vanquished all land & sea units, was just sea units
+* Projection of Power, Victory Conditions – 10vp was 11vps (matches Triggered Victory)
+
+
+v2.5
 TO DO:
 autorepair ships next to harbour only !!!
 
@@ -9244,7 +9251,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>	
 <attachment name="triggerAttachment_Remove_Fleet_Wako" attachTo="Wako" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Wako"/>
-    <option name="removeUnits" value="all:Kobaya:Wako-Sengokubune:Teitoku-Wako-Sengokubune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 	
@@ -9259,7 +9266,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Otomo" attachTo="Otomo" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Otomo"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>		
 	
@@ -9275,7 +9282,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Shimazu" attachTo="Shimazu" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Shimazu"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 		
@@ -9291,7 +9298,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Miyoshi" attachTo="Miyoshi" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Miyoshi"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9307,7 +9314,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>	
 <attachment name="triggerAttachment_Remove_Fleet_Mori" attachTo="Mori" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Mori"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9323,7 +9330,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>	
 <attachment name="triggerAttachment_Remove_Fleet_Amago" attachTo="Amago" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Amago"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 		
@@ -9339,7 +9346,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Bessho" attachTo="Bessho" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Bessho"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9355,7 +9362,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Azai" attachTo="Azai" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Azai"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9371,7 +9378,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Ikko-Ikki" attachTo="Ikko-Ikki" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Ikko-Ikki"/>
-    <option name="removeUnits" value="all:Kobaya:Ikko-Ikki_Sengokubune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9387,7 +9394,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Oda" attachTo="Oda" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Oda"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9403,7 +9410,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Oda" attachTo="Oda" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Oda"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9419,7 +9426,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Takeda" attachTo="Takeda" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Takeda"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 			
@@ -9435,7 +9442,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Date" attachTo="Date" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Date"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 		
@@ -9451,7 +9458,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Hojo" attachTo="Hojo" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Hojo"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune:Atakebune:Sekibune:Teitoku-Atakebune:Mekurabune" count="99"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 
@@ -9469,7 +9476,7 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 	</attachment>
 <attachment name="triggerAttachment_Remove_Fleet_Hatakeyama" attachTo="Hatakeyama" javaClass="TriggerAttachment" type="player">
 		<option name="conditions" value="conditionAttachment_Place_Vanq_Hatakeyama"/>
-    <option name="removeUnits" value="all:Kobaya:Sengokubune" count="22"/>
+    <option name="removeUnits" value="all:all" count="999"/>
     <option name="uses" value="1"/><option name="when" value="before:minorCombatMove"/>
 </attachment>
 	
@@ -13094,22 +13101,22 @@ start screen fails showing starting from Miyoshi and then all following clans mi
 
     <property name="Projection of Power" value="false" editable="true"><boolean/></property>
     
-    <property name="Amago Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Azai Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Bessho Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Hatakeyama Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Date Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Hojo Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>	 
-    <property name="Miyoshi Projection of Power VCs" value="11" editable="true"><number min="11" max="32"/>	</property>
-    <property name="Mori Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Oda Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>	
-    <property name="Otomo Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Shimazu Projection of Power VCs" value="11" editable="true"><number min="11" max="32"/>	</property>
-    <property name="Takeda Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Uesugi Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>
-    <property name="Ikko-Ikki Projection of Power VCs" value="11" editable="true"> <number min="11" max="32"/>	</property>	
-    <property name="Wako Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>	
-    <property name="Joseon Projection of Power VCs" value="11" editable="true">	<number min="11" max="32"/>	</property>	
+    <property name="Amago Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Azai Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Bessho Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Hatakeyama Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Date Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Hojo Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>	 
+    <property name="Miyoshi Projection of Power VCs" value="10" editable="true"><number min="10" max="32"/>	</property>
+    <property name="Mori Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Oda Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>	
+    <property name="Otomo Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Shimazu Projection of Power VCs" value="10" editable="true"><number min="10" max="32"/>	</property>
+    <property name="Takeda Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Uesugi Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>
+    <property name="Ikko-Ikki Projection of Power VCs" value="10" editable="true"> <number min="10" max="32"/>	</property>	
+    <property name="Wako Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>	
+    <property name="Joseon Projection of Power VCs" value="10" editable="true">	<number min="10" max="32"/>	</property>	
 
 
 	<property name="Economic Victory" value="false" editable="true"><boolean/></property>
